@@ -1,0 +1,7 @@
+name: tdd-azd-vmwithlb
+metadata:
+  template: tdd-azd-vmwithlb@1.11.0
+infra:
+  provider: "bicep"
+  parameters:
+    environmentName: ${AZD_ENV_NAME}

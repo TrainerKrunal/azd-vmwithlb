@@ -1,0 +1,7 @@
+{
+  "vnet": "vnet",
+  "nsg": "nsg",
+  "pip": "pip",
+  "lb": "lb",
+  "vm": "vm"
+}
