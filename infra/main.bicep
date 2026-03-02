@@ -9,6 +9,11 @@ param adminPassword string
 @description('Name of the environment that can be used as part of naming resource convention')
 param environmentName string
 
+var tags = {
+  'azd-env-name': environmentName
+  SecurityControl : 'Ignore' // used for MTT Managed subscriptions
+}
+
 resource rg 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   name: 'rg-${environmentName}'
   location: location
